@@ -55,3 +55,5 @@ gem 'bootstrap-sass'
 gem 'rack-cors', '~> 0.4.0'
 
 gem 'jquery-rails'
+
+gem 'rails_12factor', group: :production
