@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Uid:</strong>
+  <%= @ordersheet.uid %>
+</p>
+
+<p>
+  <strong>License:</strong>
+  <%= @ordersheet.license %>
+</p>
+
+<p>
+  <strong>Product 1:</strong>
+  <%= @ordersheet.product_1 %>
+</p>
+
+<p>
+  <strong>Product 2:</strong>
+  <%= @ordersheet.product_2 %>
+</p>
+
+<p>
+  <strong>Order total:</strong>
+  <%= @ordersheet.order_total %>
+</p>
+
+<p>
+  <strong>Pur date:</strong>
+  <%= @ordersheet.pur_date %>
+</p>
+
+<p>
+  <strong>F name:</strong>
+  <%= @ordersheet.f_name %>
+</p>
+
+<p>
+  <strong>L name:</strong>
+  <%= @ordersheet.l_name %>
+</p>
+
+<p>
+  <strong>Address 1:</strong>
+  <%= @ordersheet.address_1 %>
+</p>
+
+<p>
+  <strong>Address 2:</strong>
+  <%= @ordersheet.address_2 %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @ordersheet.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @ordersheet.state %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @ordersheet.zip %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @ordersheet.email %>
+</p>
+
+<%= link_to 'Edit', edit_ordersheet_path(@ordersheet) %> |
+<%= link_to 'Back', ordersheets_path %>

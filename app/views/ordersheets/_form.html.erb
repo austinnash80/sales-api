@@ -1,0 +1,87 @@
+<%= form_with(model: ordersheet, local: true) do |form| %>
+  <% if ordersheet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ordersheet.errors.count, "error") %> prohibited this ordersheet from being saved:</h2>
+
+      <ul>
+      <% ordersheet.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :uid %>
+    <%= form.number_field :uid, id: :ordersheet_uid %>
+  </div>
+
+  <div class="field">
+    <%= form.label :license %>
+    <%= form.text_field :license, id: :ordersheet_license %>
+  </div>
+
+  <div class="field">
+    <%= form.label :product_1 %>
+    <%= form.text_field :product_1, id: :ordersheet_product_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :product_2 %>
+    <%= form.text_field :product_2, id: :ordersheet_product_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :order_total %>
+    <%= form.number_field :order_total, id: :ordersheet_order_total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pur_date %>
+    <%= form.date_select :pur_date, id: :ordersheet_pur_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :f_name %>
+    <%= form.text_field :f_name, id: :ordersheet_f_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :l_name %>
+    <%= form.text_field :l_name, id: :ordersheet_l_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address_1 %>
+    <%= form.text_field :address_1, id: :ordersheet_address_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address_2 %>
+    <%= form.text_field :address_2, id: :ordersheet_address_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city %>
+    <%= form.text_field :city, id: :ordersheet_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :state %>
+    <%= form.text_field :state, id: :ordersheet_state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :zip %>
+    <%= form.number_field :zip, id: :ordersheet_zip %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :ordersheet_email %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
